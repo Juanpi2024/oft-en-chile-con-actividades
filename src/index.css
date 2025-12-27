@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap');
+
 /* ============================================
    APLICACIÓN OAT CHILE
    Sistema de Diseño - Colores MINEDUC
@@ -11,13 +13,13 @@
   --mineduc-blue-medium: #1f589b;
   --mineduc-blue-light: #cde5fb;
   --mineduc-accent: #CF5526;
-  
+
   /* Semantic Colors */
   --color-primary: var(--mineduc-blue);
   --color-primary-dark: var(--mineduc-blue-dark);
   --color-primary-light: var(--mineduc-blue-light);
   --color-accent: var(--mineduc-accent);
-  
+
   /* Neutrals */
   --color-white: #ffffff;
   --color-gray-50: #f9fafb;
@@ -30,84 +32,108 @@
   --color-gray-700: #374151;
   --color-gray-800: #1f2937;
   --color-gray-900: #111827;
-  
+
   /* Dimension Colors (6 OAT dimensions) */
-  --dimension-fisica: #2dd4bf;       /* Teal */
-  --dimension-afectiva: #f472b6;     /* Pink */
-  --dimension-cognitiva: #a78bfa;    /* Purple */
-  --dimension-sociocultural: #4ade80; /* Green */
-  --dimension-moral: #fbbf24;        /* Amber */
-  --dimension-espiritual: #60a5fa;   /* Sky Blue */
-  
+  --dimension-fisica: #2dd4bf;
+  /* Teal */
+  --dimension-afectiva: #f472b6;
+  /* Pink */
+  --dimension-cognitiva: #a78bfa;
+  /* Purple */
+  --dimension-sociocultural: #4ade80;
+  /* Green */
+  --dimension-moral: #fbbf24;
+  /* Amber */
+  --dimension-espiritual: #60a5fa;
+  /* Sky Blue */
+
   /* Status Colors */
   --color-success: #22c55e;
   --color-warning: #f59e0b;
   --color-error: #ef4444;
   --color-info: var(--mineduc-blue);
-  
+
   /* Typography */
   --font-family-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-family-display: 'Outfit', var(--font-family-primary);
-  
-  --font-size-xs: 0.75rem;    /* 12px */
-  --font-size-sm: 0.875rem;   /* 14px */
-  --font-size-base: 1rem;     /* 16px */
-  --font-size-lg: 1.125rem;   /* 18px */
-  --font-size-xl: 1.25rem;    /* 20px */
-  --font-size-2xl: 1.5rem;    /* 24px */
-  --font-size-3xl: 1.875rem;  /* 30px */
-  --font-size-4xl: 2.25rem;   /* 36px */
-  
+
+  --font-size-xs: 0.75rem;
+  /* 12px */
+  --font-size-sm: 0.875rem;
+  /* 14px */
+  --font-size-base: 1rem;
+  /* 16px */
+  --font-size-lg: 1.125rem;
+  /* 18px */
+  --font-size-xl: 1.25rem;
+  /* 20px */
+  --font-size-2xl: 1.5rem;
+  /* 24px */
+  --font-size-3xl: 1.875rem;
+  /* 30px */
+  --font-size-4xl: 2.25rem;
+  /* 36px */
+
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
-  
+
   --line-height-tight: 1.25;
   --line-height-normal: 1.5;
   --line-height-relaxed: 1.75;
-  
+
   /* Spacing */
-  --space-1: 0.25rem;  /* 4px */
-  --space-2: 0.5rem;   /* 8px */
-  --space-3: 0.75rem;  /* 12px */
-  --space-4: 1rem;     /* 16px */
-  --space-5: 1.25rem;  /* 20px */
-  --space-6: 1.5rem;   /* 24px */
-  --space-8: 2rem;     /* 32px */
-  --space-10: 2.5rem;  /* 40px */
-  --space-12: 3rem;    /* 48px */
-  --space-16: 4rem;    /* 64px */
-  
+  --space-1: 0.25rem;
+  /* 4px */
+  --space-2: 0.5rem;
+  /* 8px */
+  --space-3: 0.75rem;
+  /* 12px */
+  --space-4: 1rem;
+  /* 16px */
+  --space-5: 1.25rem;
+  /* 20px */
+  --space-6: 1.5rem;
+  /* 24px */
+  --space-8: 2rem;
+  /* 32px */
+  --space-10: 2.5rem;
+  /* 40px */
+  --space-12: 3rem;
+  /* 48px */
+  --space-16: 4rem;
+  /* 64px */
+
   /* Border Radius */
   --radius-sm: 0.25rem;
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
   --radius-xl: 1rem;
   --radius-full: 9999px;
-  
+
   /* Shadows */
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  
+
   /* Transitions */
   --transition-fast: 150ms ease;
   --transition-normal: 250ms ease;
   --transition-slow: 350ms ease;
-  
+
   /* Layout */
   --sidebar-width: 280px;
   --header-height: 64px;
   --content-max-width: 1200px;
 }
 
-/* === Google Fonts Import === */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap');
 
 /* === CSS Reset & Base Styles === */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -129,19 +155,41 @@ body {
 }
 
 /* === Typography === */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-family-display);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-tight);
   color: var(--color-gray-900);
 }
 
-h1 { font-size: var(--font-size-4xl); }
-h2 { font-size: var(--font-size-3xl); }
-h3 { font-size: var(--font-size-2xl); }
-h4 { font-size: var(--font-size-xl); }
-h5 { font-size: var(--font-size-lg); }
-h6 { font-size: var(--font-size-base); }
+h1 {
+  font-size: var(--font-size-4xl);
+}
+
+h2 {
+  font-size: var(--font-size-3xl);
+}
+
+h3 {
+  font-size: var(--font-size-2xl);
+}
+
+h4 {
+  font-size: var(--font-size-xl);
+}
+
+h5 {
+  font-size: var(--font-size-lg);
+}
+
+h6 {
+  font-size: var(--font-size-base);
+}
 
 p {
   margin-bottom: var(--space-4);
@@ -255,12 +303,29 @@ a:hover {
 }
 
 /* Dimension color indicators */
-.nav-item[data-dimension="fisica"] .dimension-indicator { background: var(--dimension-fisica); }
-.nav-item[data-dimension="afectiva"] .dimension-indicator { background: var(--dimension-afectiva); }
-.nav-item[data-dimension="cognitiva"] .dimension-indicator { background: var(--dimension-cognitiva); }
-.nav-item[data-dimension="sociocultural"] .dimension-indicator { background: var(--dimension-sociocultural); }
-.nav-item[data-dimension="moral"] .dimension-indicator { background: var(--dimension-moral); }
-.nav-item[data-dimension="espiritual"] .dimension-indicator { background: var(--dimension-espiritual); }
+.nav-item[data-dimension="fisica"] .dimension-indicator {
+  background: var(--dimension-fisica);
+}
+
+.nav-item[data-dimension="afectiva"] .dimension-indicator {
+  background: var(--dimension-afectiva);
+}
+
+.nav-item[data-dimension="cognitiva"] .dimension-indicator {
+  background: var(--dimension-cognitiva);
+}
+
+.nav-item[data-dimension="sociocultural"] .dimension-indicator {
+  background: var(--dimension-sociocultural);
+}
+
+.nav-item[data-dimension="moral"] .dimension-indicator {
+  background: var(--dimension-moral);
+}
+
+.nav-item[data-dimension="espiritual"] .dimension-indicator {
+  background: var(--dimension-espiritual);
+}
 
 .dimension-indicator {
   width: 8px;
@@ -345,12 +410,29 @@ a:hover {
   height: 100%;
 }
 
-.dimension-card[data-dimension="fisica"]::before { background: var(--dimension-fisica); }
-.dimension-card[data-dimension="afectiva"]::before { background: var(--dimension-afectiva); }
-.dimension-card[data-dimension="cognitiva"]::before { background: var(--dimension-cognitiva); }
-.dimension-card[data-dimension="sociocultural"]::before { background: var(--dimension-sociocultural); }
-.dimension-card[data-dimension="moral"]::before { background: var(--dimension-moral); }
-.dimension-card[data-dimension="espiritual"]::before { background: var(--dimension-espiritual); }
+.dimension-card[data-dimension="fisica"]::before {
+  background: var(--dimension-fisica);
+}
+
+.dimension-card[data-dimension="afectiva"]::before {
+  background: var(--dimension-afectiva);
+}
+
+.dimension-card[data-dimension="cognitiva"]::before {
+  background: var(--dimension-cognitiva);
+}
+
+.dimension-card[data-dimension="sociocultural"]::before {
+  background: var(--dimension-sociocultural);
+}
+
+.dimension-card[data-dimension="moral"]::before {
+  background: var(--dimension-moral);
+}
+
+.dimension-card[data-dimension="espiritual"]::before {
+  background: var(--dimension-espiritual);
+}
 
 /* === Buttons === */
 .btn {
@@ -418,12 +500,35 @@ a:hover {
   border-radius: var(--radius-full);
 }
 
-.badge-fisica { background: color-mix(in srgb, var(--dimension-fisica) 15%, white); color: var(--dimension-fisica); }
-.badge-afectiva { background: color-mix(in srgb, var(--dimension-afectiva) 15%, white); color: var(--dimension-afectiva); }
-.badge-cognitiva { background: color-mix(in srgb, var(--dimension-cognitiva) 15%, white); color: var(--dimension-cognitiva); }
-.badge-sociocultural { background: color-mix(in srgb, var(--dimension-sociocultural) 15%, white); color: var(--dimension-sociocultural); }
-.badge-moral { background: color-mix(in srgb, var(--dimension-moral) 15%, white); color: var(--dimension-moral); }
-.badge-espiritual { background: color-mix(in srgb, var(--dimension-espiritual) 15%, white); color: var(--dimension-espiritual); }
+.badge-fisica {
+  background: color-mix(in srgb, var(--dimension-fisica) 15%, white);
+  color: var(--dimension-fisica);
+}
+
+.badge-afectiva {
+  background: color-mix(in srgb, var(--dimension-afectiva) 15%, white);
+  color: var(--dimension-afectiva);
+}
+
+.badge-cognitiva {
+  background: color-mix(in srgb, var(--dimension-cognitiva) 15%, white);
+  color: var(--dimension-cognitiva);
+}
+
+.badge-sociocultural {
+  background: color-mix(in srgb, var(--dimension-sociocultural) 15%, white);
+  color: var(--dimension-sociocultural);
+}
+
+.badge-moral {
+  background: color-mix(in srgb, var(--dimension-moral) 15%, white);
+  color: var(--dimension-moral);
+}
+
+.badge-espiritual {
+  background: color-mix(in srgb, var(--dimension-espiritual) 15%, white);
+  color: var(--dimension-espiritual);
+}
 
 /* === Dashboard Grid === */
 .dashboard-grid {
@@ -608,36 +713,97 @@ a:hover {
 }
 
 /* === Utility Classes === */
-.text-center { text-align: center; }
-.text-right { text-align: right; }
-.text-muted { color: var(--color-gray-500); }
-.text-primary { color: var(--color-primary); }
-.text-accent { color: var(--color-accent); }
+.text-center {
+  text-align: center;
+}
 
-.flex { display: flex; }
-.flex-col { flex-direction: column; }
-.items-center { align-items: center; }
-.justify-between { justify-content: space-between; }
-.gap-2 { gap: var(--space-2); }
-.gap-4 { gap: var(--space-4); }
-.gap-6 { gap: var(--space-6); }
+.text-right {
+  text-align: right;
+}
 
-.mt-4 { margin-top: var(--space-4); }
-.mt-6 { margin-top: var(--space-6); }
-.mb-4 { margin-bottom: var(--space-4); }
-.mb-6 { margin-bottom: var(--space-6); }
+.text-muted {
+  color: var(--color-gray-500);
+}
 
-.hidden { display: none; }
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: var(--space-2);
+}
+
+.gap-4 {
+  gap: var(--space-4);
+}
+
+.gap-6 {
+  gap: var(--space-6);
+}
+
+.mt-4 {
+  margin-top: var(--space-4);
+}
+
+.mt-6 {
+  margin-top: var(--space-6);
+}
+
+.mb-4 {
+  margin-bottom: var(--space-4);
+}
+
+.mb-6 {
+  margin-bottom: var(--space-6);
+}
+
+.hidden {
+  display: none;
+}
 
 /* === Animations === */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes slideIn {
-  from { transform: translateX(-20px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .animate-fade-in {
@@ -654,11 +820,11 @@ a:hover {
     transform: translateX(-100%);
     transition: transform var(--transition-normal);
   }
-  
+
   .sidebar.open {
     transform: translateX(0);
   }
-  
+
   .dashboard-grid {
     grid-template-columns: 1fr;
   }
