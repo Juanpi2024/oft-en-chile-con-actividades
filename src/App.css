@@ -1,0 +1,206 @@
+/* App-specific styles */
+
+/* Mobile menu button */
+@media (min-width: 769px) {
+  .header .btn-secondary:first-child {
+    display: none;
+  }
+}
+
+/* Smooth page transitions */
+.main-content>div {
+  animation: fadeIn var(--transition-normal) ease;
+}
+
+/* Card hover effects enhancement */
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, transparent 40%, rgba(255, 255, 255, 0.1) 100%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+/* IDPS Table responsive */
+@media (max-width: 768px) {
+  .idps-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* Level selector responsive */
+@media (max-width: 900px) {
+  .level-selector {
+    display: none;
+  }
+}
+
+/* Activity item hover button visibility */
+.activity-item .btn {
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.activity-item:hover .btn {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .activity-item .btn {
+    opacity: 1;
+  }
+}
+
+/* Dashboard stat counter animation */
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dashboard-stat-value {
+  animation: countUp 0.5s ease forwards;
+}
+
+/* Dimension card left border animation */
+.dimension-card::before {
+  transition: height var(--transition-slow);
+}
+
+.dimension-card:hover::before {
+  height: 100%;
+}
+
+/* Badge shine effect */
+.badge {
+  position: relative;
+  overflow: hidden;
+}
+
+.badge::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.badge:hover::after {
+  left: 100%;
+}
+
+/* Floating action button for mobile */
+.fab {
+  position: fixed;
+  bottom: var(--space-6);
+  right: var(--space-6);
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-full);
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  box-shadow: var(--shadow-lg);
+  font-size: var(--font-size-2xl);
+  cursor: pointer;
+  z-index: 80;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.fab:hover {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-xl);
+}
+
+@media (max-width: 768px) {
+  .fab {
+    display: flex;
+  }
+}
+
+/* Empty state styling */
+.empty-state {
+  text-align: center;
+  padding: var(--space-16);
+  color: var(--color-gray-400);
+}
+
+.empty-state-icon {
+  font-size: 64px;
+  margin-bottom: var(--space-4);
+}
+
+/* Loading skeleton */
+.skeleton {
+  background: linear-gradient(90deg, var(--color-gray-200) 25%, var(--color-gray-100) 50%, var(--color-gray-200) 75%);
+  background-size: 200% 100%;
+  animation: skeleton 1.5s infinite;
+  border-radius: var(--radius-md);
+}
+
+@keyframes skeleton {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Toast notification */
+.toast {
+  position: fixed;
+  bottom: var(--space-6);
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: var(--color-gray-800);
+  color: white;
+  padding: var(--space-4) var(--space-6);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  opacity: 0;
+  transition: transform var(--transition-normal), opacity var(--transition-normal);
+  z-index: 200;
+}
+
+.toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+.toast.success {
+  background: var(--color-success);
+}
+
+.toast.error {
+  background: var(--color-error);
+}
